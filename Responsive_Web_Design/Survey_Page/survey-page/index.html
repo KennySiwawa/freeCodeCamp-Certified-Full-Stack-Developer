@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We value your feedback! Please fill out this survey to help us improve.</p>
+    <form id="survey-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="0" max="120>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="">Select your country</option>
+            <option value="usa">United States</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select>
+
+        <fieldset>
+            <legend>How did you hear about us?</legend>
+            <label>
+                <input type="radio" name="source" value="friend"> Friend
+            </label>
+            <label>
+                <input type="radio" name="source" value="advertisement"> Advertisement
+            </label>
+            <label>
+                <input type="radio" name="source" value="social-media"> Social Media
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>What are your interests?</legend>
+            <label>
+                <input type="checkbox" name="interests" value="sports"> Sports
+            </label>
+            <label>
+                <input type="checkbox" name="interests" value="music"> Music
+            </label>
+            <label>
+                <input type="checkbox" name="interests" value="travel"> Travel
+            </label>
+        </fieldset>
+
+        <label for="comments">Additional Comments:</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
